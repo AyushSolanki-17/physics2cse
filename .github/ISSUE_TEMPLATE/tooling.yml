@@ -1,0 +1,19 @@
+name: Tooling issue
+description: Report a validation, build, or site tooling problem.
+title: "tooling: "
+labels:
+  - tooling
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Include the command and relevant output.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should happen?
+    validations:
+      required: true
