@@ -27,7 +27,7 @@ export default defineConfig({
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/ayushsolanki/physics2cse",
+          href: "https://github.com/AyushSolanki-17/physics2cse",
         },
       ],
       sidebar: [

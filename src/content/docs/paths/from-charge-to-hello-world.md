@@ -20,11 +20,11 @@ The answer is a chain of constraints and design decisions. The first five steps 
 
 ## Available Now
 
-1. [Measurement, Models, and Units](/foundations/measurement-models-units/)
-2. [Matter and Electric Charge](/physics/matter-electric-charge/)
-3. [Electric Fields and Potential](/physics/electric-fields-potential/)
-4. [Voltage, Current, and Resistance](/electronics/voltage-current-resistance/)
-5. [A First Circuit Model](/electronics/first-circuit-model/)
+1. [Measurement, Models, and Units](../../foundations/measurement-models-units/)
+2. [Matter and Electric Charge](../../physics/matter-electric-charge/)
+3. [Electric Fields and Potential](../../physics/electric-fields-potential/)
+4. [Voltage, Current, and Resistance](../../electronics/voltage-current-resistance/)
+5. [A First Circuit Model](../../electronics/first-circuit-model/)
 
 ## Planned Later
 

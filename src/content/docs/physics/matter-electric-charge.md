@@ -25,7 +25,7 @@ Charge is the property that lets pieces of matter attract, repel, and influence 
 
 ## What you should already know
 
-You should know that a measured quantity needs a number and a unit from [Measurement, Models, and Units](/foundations/measurement-models-units/).
+You should know that a measured quantity needs a number and a unit from [Measurement, Models, and Units](../../foundations/measurement-models-units/).
 
 ## The central intuition
 
@@ -82,4 +82,4 @@ Make a two-column table: "charge at rest" and "charge moving." List one example 
 
 ## What this unlocks
 
-Next, [Electric Fields and Potential](/physics/electric-fields-potential/) explains how separated charge can influence nearby space and store electrical possibility before anything flows.
+Next, [Electric Fields and Potential](../electric-fields-potential/) explains how separated charge can influence nearby space and store electrical possibility before anything flows.

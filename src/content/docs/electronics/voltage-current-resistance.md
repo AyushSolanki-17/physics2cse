@@ -23,7 +23,7 @@ Digital logic eventually depends on circuits that make predictable high and low 
 
 ## What you should already know
 
-You should know that voltage is energy per unit charge from [Electric Fields and Potential](/physics/electric-fields-potential/).
+You should know that voltage is energy per unit charge from [Electric Fields and Potential](../../physics/electric-fields-potential/).
 
 ## The central intuition
 
@@ -90,4 +90,4 @@ Find an LED circuit diagram that includes a resistor. Identify which part provid
 
 ## What this unlocks
 
-Next, [A First Circuit Model](/electronics/first-circuit-model/) combines voltage, current, and resistance into a complete loop that can transfer energy predictably.
+Next, [A First Circuit Model](../first-circuit-model/) combines voltage, current, and resistance into a complete loop that can transfer energy predictably.

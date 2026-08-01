@@ -23,7 +23,7 @@ Circuits work because electrical influence can exist across space. A battery can
 
 ## What you should already know
 
-You should know that matter can carry positive or negative charge from [Matter and Electric Charge](/physics/matter-electric-charge/).
+You should know that matter can carry positive or negative charge from [Matter and Electric Charge](../matter-electric-charge/).
 
 ## The central intuition
 
@@ -84,4 +84,4 @@ Find a battery label. Write its voltage and explain it as energy per coulomb. Fo
 
 ## What this unlocks
 
-Next, [Voltage, Current, and Resistance](/electronics/voltage-current-resistance/) connects potential difference to moving charge and material opposition.
+Next, [Voltage, Current, and Resistance](../../electronics/voltage-current-resistance/) connects potential difference to moving charge and material opposition.
