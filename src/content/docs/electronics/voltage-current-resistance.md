@@ -17,8 +17,6 @@ learning_objectives:
   - Use Ohm's law for a simple resistor calculation.
 ---
 
-# Voltage, Current, and Resistance
-
 ## Why this matters
 
 Digital logic eventually depends on circuits that make predictable high and low electrical states. Before switching, we need a model for how charge moves through a material when a voltage difference is applied.

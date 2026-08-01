@@ -113,3 +113,36 @@ Validation commands:
 - `npm test`
 - `npm run build`
 - `npm run validate`
+
+## P2CSE-005: Fix Browser QA Findings Before First PR
+
+Priority: high
+Status: done
+Dependencies: P2CSE-001
+
+Acceptance criteria:
+
+- Pages render a single H1 from Starlight frontmatter title.
+- Sidebar and previous/next navigation follow the guided learning sequence.
+- Validation rejects body-level H1 headings that would duplicate page titles.
+- Browser QA confirms no console errors or horizontal overflow on checked pages.
+
+Relevant paths:
+
+- `astro.config.mjs`
+- `src/content/docs/`
+- `scripts/validate-content.mjs`
+- `tests/validate-content.test.mjs`
+- `templates/lesson.md`
+
+Validation commands:
+
+- `npm run validate`
+- `npm test`
+- `npm run format`
+- `npm run check`
+- `npm run build`
+
+Notes:
+
+- Found by local browser inspection before publishing.

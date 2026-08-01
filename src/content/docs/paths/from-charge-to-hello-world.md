@@ -14,8 +14,6 @@ learning_objectives:
   - Identify which later computing concepts depend on electrical switching.
 ---
 
-# From Charge to Hello World
-
 This path follows one question: how can physical matter become a machine that prints `Hello, world`?
 
 The answer is a chain of constraints and design decisions. The first five steps are complete enough to study now.

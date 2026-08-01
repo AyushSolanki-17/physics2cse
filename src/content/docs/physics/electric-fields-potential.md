@@ -17,8 +17,6 @@ learning_objectives:
   - Interpret potential as energy per unit charge.
 ---
 
-# Electric Fields and Potential
-
 ## Why this matters
 
 Circuits work because electrical influence can exist across space. A battery can create a difference between two terminals before a wire connects them. To explain that, we need fields and potential.

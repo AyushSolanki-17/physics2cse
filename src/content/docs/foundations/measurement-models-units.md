@@ -16,8 +16,6 @@ learning_objectives:
   - Use tolerance to decide whether a value is close enough for a purpose.
 ---
 
-# Measurement, Models, and Units
-
 ## Why this matters
 
 Computers only become understandable when vague observations become quantities. A wire is not just "thin"; it has length, diameter, resistance, temperature, and manufacturing tolerance. A processor is not just "fast"; it completes work in measurable time under measurable constraints.

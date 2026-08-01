@@ -17,8 +17,6 @@ learning_objectives:
   - Distinguish charge from energy and from current.
 ---
 
-# Matter and Electric Charge
-
 ## Why this matters
 
 Digital computers rely on controlled electrical differences. Before voltage, current, wires, switches, or memory make sense, we need one idea: matter has electrical properties that can be measured and rearranged.
