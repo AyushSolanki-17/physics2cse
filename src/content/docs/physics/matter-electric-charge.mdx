@@ -1,0 +1,150 @@
+---
+id: physics.matter.charge
+title: Matter and Electric Charge
+description: See charge as a signed balance inside matter, and learn how tiny imbalances become electrical behavior.
+kind: concept
+status: draft
+level: 0
+estimated_minutes: 25
+prerequisites:
+  - foundations.measurement.units
+tags:
+  - physics
+  - charge
+learning_objectives:
+  - Explain neutral matter as balanced positive and negative charge.
+  - Calculate net charge from a difference between proton and electron counts.
+  - Distinguish charge from energy and from current.
+---
+
+import ChargeLedger from "../../../components/learning/ChargeLedger.astro";
+
+## Why this matters
+
+A computer begins with a strange engineering promise: a piece of matter can be nudged into one electrical state or another, and that state can be made reliable enough to stand for information.
+
+That promise rests on charge. Not "electricity" as a vague glow, and not current yet. Charge is the signed property of matter that makes some pieces attract, repel, rearrange, and hold electrical tension before anything becomes a wire or a bit.
+
+The picture to keep: matter is usually a crowded balance sheet. Positive charge and negative charge are both present. Most of the time their totals cancel from far away. Computing starts when engineers learn which parts of that balance can move and which parts are locked in place.
+
+## What you should already know
+
+You should know that a measured quantity needs a number and a unit from [Measurement, Models, and Units](../../foundations/measurement-models-units/).
+
+## The central intuition
+
+Neutral matter is not matter with no charge. It is matter whose positive and negative charge counts cancel at the scale you are observing.
+
+Think of charge like a signed ledger inside an object:
+
+- Positive atomic cores contribute `+` entries.
+- Electrons contribute `-` entries.
+- Equal totals make the object look neutral from the outside.
+- A small surplus of either sign makes the object electrically unbalanced.
+
+<ChargeLedger />
+
+This is why static electricity can feel surprising. You do not need to create charge from nothing. You only need to move a tiny fraction of already-present electrons from one object to another.
+
+## The mechanism
+
+Ordinary matter is built from atoms. Each atom has a positively charged nucleus and negatively charged electrons around it. In many solids, the positive atomic cores are held in a lattice: they can vibrate, but they do not roam through the material as a group. Some electrons are much easier to move.
+
+That asymmetry matters. If rubbing two materials lets a few electrons transfer, one object can end with extra electrons and become negatively charged. The other has fewer electrons than before and becomes positively charged.
+
+The effect can be large enough to move paper scraps even though the number of transferred electrons is tiny compared with the total number of electrons in the objects. The important quantity is not "how many charges exist at all." It is the leftover imbalance after the signs are counted.
+
+Two rules become useful immediately:
+
+- Like signs repel because each charge responds to the electric influence of the other in opposite directions.
+- Opposite signs attract because each charge is pulled toward the imbalance that would reduce the separation.
+
+The detailed force law comes later. For now, the engineering move is simpler: charge can be counted, charge has sign, and mobile charge can be rearranged.
+
+## The smallest useful formal model
+
+The SI unit of charge is the coulomb, written `C`.
+
+The elementary charge has magnitude about:
+
+```text
+e = 1.602 x 10^-19 C
+```
+
+Use this accounting model:
+
+```text
+net charge = (number of protons - number of electrons) x e
+```
+
+So an object with `1,000,000` more electrons than protons has:
+
+```text
+net charge = -1,000,000 x e
+           = -1.602 x 10^-13 C
+```
+
+That value is small in coulombs but meaningful physically. A million extra electrons sounds huge to a person; it is a microscopic imbalance inside ordinary matter.
+
+## Think before continuing
+
+A tiny dust grain has `500,000` more electrons than protons.
+
+1. Is its net charge positive or negative?
+2. What is its charge in coulombs, using `e = 1.602 x 10^-19 C`?
+3. If a nearby object has a positive imbalance, should the dust grain tend to move toward it or away from it?
+
+## Reveal the reasoning
+
+<details>
+<summary>Show reasoning</summary>
+
+Extra electrons make the grain negative. Its charge is `-500,000 x 1.602 x 10^-19 C`, which is `-8.01 x 10^-14 C`. A positively charged object has the opposite sign, so the grain tends to move toward it.
+
+</details>
+
+## Why not the obvious alternative?
+
+The obvious alternative is to imagine electricity as one invisible fluid that simply fills or leaves objects. That picture is tempting because current can later behave a little like flow.
+
+But the one-fluid picture breaks the first lesson you need for computing: electrical state depends on signed imbalance. A neutral wire is not empty. A charged object is not necessarily full. A transistor gate will later work because a small electric imbalance can influence nearby mobile charges without requiring a pipe of electric fluid to pour through space.
+
+The signed-ledger model is less cozy, but it survives the next steps.
+
+## Common misconception
+
+Charge is not energy, and charge is not current.
+
+Charge is a property of matter. Energy is the ability to cause change. Current is the rate at which charge moves past a place. A charged object can sit still. A moving stream of charge can carry energy. Later, voltage connects charge and energy by asking how much energy is available per unit charge.
+
+## Tiny experiment
+
+Use a plastic comb, a balloon, or a plastic ruler, plus a few small scraps of dry paper.
+
+Before touching the paper, make a prediction:
+
+```text
+If rubbing transfers electrons, one object becomes negatively imbalanced and
+the nearby paper should twitch, lift, or rotate before contact.
+```
+
+Rub the plastic object on dry hair, wool, or a dry cloth for about ten seconds. Bring it slowly near the paper without touching. Watch for the first distance at which the paper moves.
+
+Now discharge the object by touching it with your hand and try again without rubbing. The difference between the two trials is the thing to notice: the material did not become magical. Its charge balance changed.
+
+## Build or investigation challenge
+
+Make a three-row charge ledger for a made-up material sample:
+
+```text
+case                  protons        electrons       net charge
+balanced              12             12              0
+two electrons lost    12             10              +2e
+three electrons added 12             15              -3e
+```
+
+Then add a fourth row of your own and convert its net charge into coulombs. Keep the sign. The sign is the story.
+
+## What this unlocks
+
+Next, [Electric Fields and Potential](../electric-fields-potential/) explains how a charge imbalance changes nearby space and creates stored electrical possibility before anything flows.
