@@ -17,8 +17,6 @@ learning_objectives:
   - Calculate current and power in a one-resistor circuit.
 ---
 
-# A First Circuit Model
-
 ## Why this matters
 
 A computer is built from circuits, but a circuit is not just a collection of parts. It is an arranged path for charge and energy transfer. The first useful circuit model shows why arrangement matters.

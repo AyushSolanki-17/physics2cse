@@ -43,15 +43,38 @@ export default defineConfig({
         },
         {
           label: "Foundations",
-          items: [{ autogenerate: { directory: "foundations" } }],
+          items: [
+            {
+              label: "Measurement, Models, and Units",
+              slug: "foundations/measurement-models-units",
+            },
+          ],
         },
         {
           label: "Physics",
-          items: [{ autogenerate: { directory: "physics" } }],
+          items: [
+            {
+              label: "Matter and Electric Charge",
+              slug: "physics/matter-electric-charge",
+            },
+            {
+              label: "Electric Fields and Potential",
+              slug: "physics/electric-fields-potential",
+            },
+          ],
         },
         {
           label: "Electronics",
-          items: [{ autogenerate: { directory: "electronics" } }],
+          items: [
+            {
+              label: "Voltage, Current, and Resistance",
+              slug: "electronics/voltage-current-resistance",
+            },
+            {
+              label: "A First Circuit Model",
+              slug: "electronics/first-circuit-model",
+            },
+          ],
         },
       ],
     }),

@@ -1,5 +1,5 @@
 ---
-title: physics2cse
+title: Overview
 description: A first-principles path from physical measurement and electric charge to computing systems.
 kind: guide
 status: draft
@@ -8,8 +8,6 @@ tags:
   - overview
 learning_objectives: []
 ---
-
-# physics2cse
 
 Computers are not magic boxes. They are engineered stacks of assumptions, measurements, materials, circuits, representations, protocols, and tradeoffs.
 

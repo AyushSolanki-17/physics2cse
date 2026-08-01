@@ -166,6 +166,14 @@ export function validateDocs(files, options = {}) {
 
     validateLinks(file, body, routes, errors);
 
+    if (/^#\s+/mu.test(body)) {
+      errors.push({
+        file,
+        message:
+          "Do not add a level-1 heading in page body; Starlight renders the frontmatter title as the H1.",
+      });
+    }
+
     if (kind !== "concept") continue;
 
     for (const key of REQUIRED_CONCEPT_KEYS) {

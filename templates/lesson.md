@@ -1,5 +1,3 @@
-# Lesson Title
-
 ```yaml
 ---
 id: area.topic.concept
@@ -16,6 +14,8 @@ learning_objectives:
   - Explain the central relationship in plain language.
 ---
 ```
+
+Do not add a top-level `# Lesson Title` heading in the body. Starlight renders the frontmatter `title` as the page H1.
 
 ## Why this matters
 

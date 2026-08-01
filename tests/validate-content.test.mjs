@@ -37,8 +37,6 @@ learning_objectives:
   - Explain the root idea.
 ${overrides}---
 
-# Root Concept
-
 ## Why this matters
 Text.
 
@@ -161,5 +159,29 @@ description: A distinct description for another concept.
   assert.match(
     result.errors.map((error) => error.message).join("\n"),
     /Duplicate concept id/,
+  );
+});
+
+test("reports body level-one headings", () => {
+  const { docs, paths } = makeFixture({
+    "root.md": conceptFrontmatter().replace(
+      "## Why this matters",
+      "# Duplicate Body Heading",
+    ),
+    "child.md": conceptFrontmatter(
+      `id: sample.child
+title: Child Concept
+description: A distinct description for the child concept.
+prerequisites:
+  - sample.root
+`,
+    ),
+  });
+
+  const result = validateDocs(paths, { rootDir: docs });
+  assert.equal(result.ok, false);
+  assert.match(
+    result.errors.map((error) => error.message).join("\n"),
+    /level-1 heading/,
   );
 });
