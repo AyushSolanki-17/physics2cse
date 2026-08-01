@@ -1,0 +1,27 @@
+name: Content improvement
+description: Suggest a correction or improvement to a lesson.
+title: "docs: "
+labels:
+  - content
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: Which page or concept ID should be changed?
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is unclear, incorrect, missing, or misleading?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or reasoning
+      description: Include calculations, references, or reasoning when relevant.
+    validations:
+      required: false
