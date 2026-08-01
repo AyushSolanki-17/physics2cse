@@ -33,7 +33,12 @@ npm run build
 
 ## Licensing
 
-The final license has not been selected yet. Do not add a license file or make licensing claims without owner direction.
+By contributing, you agree that your contribution will be licensed under the repository's dual-license structure:
+
+- Code, configuration, scripts, tests, and reusable components are licensed under the MIT License.
+- Educational content, lessons, diagrams-as-content, paths, and documentation are licensed under Creative Commons Attribution 4.0 International.
+
+See `LICENSE.md` for details.
 
 ## Commit Style
 

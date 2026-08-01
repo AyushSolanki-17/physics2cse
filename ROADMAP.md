@@ -11,7 +11,7 @@ Status: in progress
 - [x] Add initial documentation pages for the first learning path
 - [x] Add graph and content validation
 - [x] Add basic tests and CI
-- [ ] Select final license with owner approval
+- [x] Select final license with owner approval
 - [ ] Add first polished interactive artifact
 
 ## Milestone 1: From Charge to Hello World Foundation
@@ -44,5 +44,4 @@ Status: planned
 
 ## Durable Blockers
 
-- Final licensing requires an owner decision.
-- Final canonical production domain requires an owner decision.
+- Custom production domain is deferred until one exists. Use the default GitHub Pages project URL for now.

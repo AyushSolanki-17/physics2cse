@@ -217,7 +217,7 @@ This is a dependency path, not a claim that every item already exists.
 - [x] Knowledge-graph validation script
 - [x] Basic validator tests
 - [x] GitHub Actions workflow
-- [ ] Owner-selected project license
+- [x] Owner-selected project license
 - [ ] First interactive learning artifact
 - [ ] Backlink rendering component
 - [ ] Local concept graph visualization

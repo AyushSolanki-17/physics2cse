@@ -42,4 +42,13 @@ npm run dev
 
 ## Licensing
 
-No final project license has been selected yet. Reuse, redistribution, and contribution licensing need an explicit owner decision before public release.
+This repository is open for reuse under a dual-license structure:
+
+- Code, configuration, scripts, tests, and reusable components: MIT License.
+- Educational content, lessons, diagrams-as-content, paths, and documentation: Creative Commons Attribution 4.0 International.
+
+See `LICENSE.md` for details.
+
+## Hosting
+
+The site is configured for static hosting on GitHub Pages. Until a custom domain exists, use the default GitHub Pages project URL. A custom domain can be added later without changing the curriculum content.

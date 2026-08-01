@@ -34,14 +34,13 @@ Validation commands:
 
 Notes:
 
-- Licensing remains blocked on owner decision.
 - Completed with passing validation, tests, type check, formatting, and static build.
 
 ## P2CSE-002: Select Project License
 
 Priority: high
-Status: blocked
-Dependencies: owner decision
+Status: done
+Dependencies: none
 
 Acceptance criteria:
 
@@ -61,7 +60,33 @@ Validation commands:
 
 Notes:
 
-- Do not choose this without owner approval.
+- Owner approved using an open-source license on 2026-08-01.
+- Code and tooling use MIT.
+- Educational content uses CC BY 4.0.
+
+## P2CSE-004: Document Default GitHub Pages Hosting
+
+Priority: high
+Status: done
+Dependencies: none
+
+Acceptance criteria:
+
+- README explains the default hosting approach.
+- Roadmap no longer treats a missing custom domain as a blocker.
+
+Relevant paths:
+
+- `README.md`
+- `ROADMAP.md`
+
+Validation commands:
+
+- `npm run validate`
+
+Notes:
+
+- No custom domain exists yet. Use GitHub Pages' default project URL until one is chosen later.
 
 ## P2CSE-003: Add First Interactive Artifact
 
