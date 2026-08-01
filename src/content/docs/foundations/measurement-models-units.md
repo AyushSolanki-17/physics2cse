@@ -91,4 +91,4 @@ Choose one object near you and describe it with three different models. For each
 
 ## What this unlocks
 
-Next, [Matter and Electric Charge](/physics/matter-electric-charge/) uses measurement and modeling to describe why electrical behavior can be counted and compared instead of treated as invisible mystery.
+Next, [Matter and Electric Charge](../../physics/matter-electric-charge/) uses measurement and modeling to describe why electrical behavior can be counted and compared instead of treated as invisible mystery.

@@ -185,3 +185,47 @@ prerequisites:
     /level-1 heading/,
   );
 });
+
+test("reports root-absolute internal links", () => {
+  const { docs, paths } = makeFixture({
+    "root.md": conceptFrontmatter().replace(
+      "## What this unlocks\nText.",
+      "## What this unlocks\nNext: [Child](/child/).",
+    ),
+    "child.md": conceptFrontmatter(
+      `id: sample.child
+title: Child Concept
+description: A distinct description for the child concept.
+prerequisites:
+  - sample.root
+`,
+    ),
+  });
+
+  const result = validateDocs(paths, { rootDir: docs });
+  assert.equal(result.ok, false);
+  assert.match(
+    result.errors.map((error) => error.message).join("\n"),
+    /root-absolute link/,
+  );
+});
+
+test("validates relative internal links against page routes", () => {
+  const { docs, paths } = makeFixture({
+    "root.md": conceptFrontmatter().replace(
+      "## What this unlocks\nText.",
+      "## What this unlocks\nNext: [Child](../child/).",
+    ),
+    "child.md": conceptFrontmatter(
+      `id: sample.child
+title: Child Concept
+description: A distinct description for the child concept.
+prerequisites:
+  - sample.root
+`,
+    ),
+  });
+
+  const result = validateDocs(paths, { rootDir: docs });
+  assert.equal(result.ok, true);
+});

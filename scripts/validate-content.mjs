@@ -164,7 +164,7 @@ export function validateDocs(files, options = {}) {
       );
     }
 
-    validateLinks(file, body, routes, errors);
+    validateLinks(file, body, routes, errors, route);
 
     if (/^#\s+/mu.test(body)) {
       errors.push({
@@ -241,7 +241,7 @@ function addUniqueValue(map, value, file, errors, label) {
   map.set(value, file);
 }
 
-function validateLinks(file, body, routes, errors) {
+function validateLinks(file, body, routes, errors, currentRoute) {
   const linkRegex = /\[[^\]]+\]\(([^)]+)\)/g;
   for (const match of body.matchAll(linkRegex)) {
     const href = match[1].trim();
@@ -255,13 +255,29 @@ function validateLinks(file, body, routes, errors) {
     }
 
     if (href.startsWith("/")) {
-      const route = href.includes("#") ? href.split("#")[0] : href;
-      const normalized = route.endsWith("/") ? route : `${route}/`;
-      if (!routes.has(normalized)) {
-        errors.push({ file, message: `Broken internal link: ${href}.` });
-      }
+      errors.push({
+        file,
+        message: `Use a relative internal link instead of root-absolute link: ${href}.`,
+      });
+      continue;
+    }
+
+    const route = href.split(/[?#]/u)[0];
+    if (!route || hasFileExtension(route)) {
+      continue;
+    }
+
+    const resolved = new URL(route, `https://example.test${currentRoute}`)
+      .pathname;
+    const normalized = resolved.endsWith("/") ? resolved : `${resolved}/`;
+    if (!routes.has(normalized)) {
+      errors.push({ file, message: `Broken internal link: ${href}.` });
     }
   }
+}
+
+function hasFileExtension(route) {
+  return /\/?[^/]+\.[A-Za-z0-9]+$/u.test(route);
 }
 
 export function validateGraph(concepts, errors, warnings) {

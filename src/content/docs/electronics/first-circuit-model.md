@@ -23,7 +23,7 @@ A computer is built from circuits, but a circuit is not just a collection of par
 
 ## What you should already know
 
-You should know how voltage, current, and resistance relate from [Voltage, Current, and Resistance](/electronics/voltage-current-resistance/).
+You should know how voltage, current, and resistance relate from [Voltage, Current, and Resistance](../voltage-current-resistance/).
 
 ## The central intuition
 

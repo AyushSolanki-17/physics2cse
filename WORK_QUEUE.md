@@ -146,3 +146,39 @@ Validation commands:
 Notes:
 
 - Found by local browser inspection before publishing.
+
+## P2CSE-006: Reduce Duplicate CI and Fix Pages-Base Links
+
+Priority: high
+Status: done
+Dependencies: P2CSE-001
+
+Acceptance criteria:
+
+- Pull request updates trigger one validation run instead of both push and pull request runs.
+- Superseded workflow runs are canceled where possible.
+- Main branch deployment still runs after merge.
+- Internal content links work under the GitHub Pages project base path.
+- Validation rejects root-absolute internal links in content.
+
+Relevant paths:
+
+- `.github/workflows/ci.yml`
+- `src/content/docs/`
+- `scripts/validate-content.mjs`
+- `tests/validate-content.test.mjs`
+- `astro.config.mjs`
+
+Validation commands:
+
+- `npm run validate`
+- `npm test`
+- `npm run format`
+- `npm run check`
+- `npm run build`
+- `BASE_PATH=/physics2cse SITE_URL=https://ayushsolanki-17.github.io npm run build`
+
+Notes:
+
+- Recent Actions history showed duplicate `push` and `pull_request` CI runs for PR branch updates.
+- Root-absolute Markdown links worked locally but pointed outside the project path on GitHub Pages.
