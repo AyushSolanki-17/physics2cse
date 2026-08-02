@@ -182,3 +182,32 @@ Notes:
 
 - Recent Actions history showed duplicate `push` and `pull_request` CI runs for PR branch updates.
 - Root-absolute Markdown links worked locally but pointed outside the project path on GitHub Pages.
+
+## P2CSE-007: Make Charge Lesson More Memorable
+
+Priority: high
+Status: done
+Dependencies: P2CSE-001
+
+Acceptance criteria:
+
+- The charge lesson uses a visual mental model rather than definition-only prose.
+- The lesson includes a reusable static educational diagram.
+- The formal model asks the learner to calculate signed net charge.
+- The tiny experiment includes prediction, observation, and a comparison trial.
+- The lesson remains useful without client-side JavaScript.
+
+Relevant paths:
+
+- `src/content/docs/physics/matter-electric-charge.mdx`
+- `src/components/learning/ChargeLedger.astro`
+
+Validation commands:
+
+- `npm run validate`
+- `npm run check`
+- `npm run build`
+
+Notes:
+
+- Owner feedback: early content felt too surface-level and not visually memorable.

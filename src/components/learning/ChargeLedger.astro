@@ -1,0 +1,233 @@
+<figure class="charge-ledger" aria-labelledby="charge-ledger-title">
+  <svg
+    viewBox="0 0 920 500"
+    role="img"
+    aria-labelledby="charge-ledger-title charge-ledger-desc"
+  >
+    <title id="charge-ledger-title">Charge balance as a signed ledger</title>
+    <desc id="charge-ledger-desc">
+      Three material sketches compare balanced charge, missing electrons, and
+      extra electrons. Positive atomic cores stay fixed while electrons can be
+      added or removed, changing the net charge.
+    </desc>
+
+    <defs>
+      <filter id="ledger-shadow" x="-10%" y="-10%" width="120%" height="130%">
+        <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity="0.18" />
+      </filter>
+    </defs>
+
+    <rect width="920" height="500" rx="22" class="diagram-bg" />
+
+    <g transform="translate(34 36)">
+      <g class="panel" filter="url(#ledger-shadow)">
+        <rect width="260" height="380" rx="16" />
+        <text x="130" y="36" text-anchor="middle" class="panel-title">
+          balanced material
+        </text>
+        <text x="130" y="62" text-anchor="middle" class="panel-subtitle">
+          6 positive cores, 6 electrons
+        </text>
+        <g transform="translate(42 92)">
+          <circle cx="34" cy="38" r="24" class="core" />
+          <circle cx="88" cy="38" r="24" class="core" />
+          <circle cx="142" cy="38" r="24" class="core" />
+          <circle cx="34" cy="96" r="24" class="core" />
+          <circle cx="88" cy="96" r="24" class="core" />
+          <circle cx="142" cy="96" r="24" class="core" />
+          <text x="34" y="45" text-anchor="middle" class="charge-plus">+</text>
+          <text x="88" y="45" text-anchor="middle" class="charge-plus">+</text>
+          <text x="142" y="45" text-anchor="middle" class="charge-plus">+</text>
+          <text x="34" y="103" text-anchor="middle" class="charge-plus">+</text>
+          <text x="88" y="103" text-anchor="middle" class="charge-plus">+</text>
+          <text x="142" y="103" text-anchor="middle" class="charge-plus">+</text>
+
+          <circle cx="20" cy="166" r="16" class="electron" />
+          <circle cx="62" cy="180" r="16" class="electron" />
+          <circle cx="104" cy="164" r="16" class="electron" />
+          <circle cx="146" cy="183" r="16" class="electron" />
+          <circle cx="178" cy="146" r="16" class="electron" />
+          <circle cx="128" cy="220" r="16" class="electron" />
+          <text x="20" y="172" text-anchor="middle" class="charge-minus">-</text>
+          <text x="62" y="186" text-anchor="middle" class="charge-minus">-</text>
+          <text x="104" y="170" text-anchor="middle" class="charge-minus">-</text>
+          <text x="146" y="189" text-anchor="middle" class="charge-minus">-</text>
+          <text x="178" y="152" text-anchor="middle" class="charge-minus">-</text>
+          <text x="128" y="226" text-anchor="middle" class="charge-minus">-</text>
+        </g>
+        <text x="130" y="346" text-anchor="middle" class="equation">
+          net charge = 0
+        </text>
+      </g>
+
+      <g transform="translate(296 0)" class="panel" filter="url(#ledger-shadow)">
+        <rect width="260" height="380" rx="16" />
+        <text x="130" y="36" text-anchor="middle" class="panel-title">
+          electrons removed
+        </text>
+        <text x="130" y="62" text-anchor="middle" class="panel-subtitle">
+          6 positive cores, 4 electrons
+        </text>
+        <g transform="translate(42 92)">
+          <circle cx="34" cy="38" r="24" class="core" />
+          <circle cx="88" cy="38" r="24" class="core" />
+          <circle cx="142" cy="38" r="24" class="core" />
+          <circle cx="34" cy="96" r="24" class="core" />
+          <circle cx="88" cy="96" r="24" class="core" />
+          <circle cx="142" cy="96" r="24" class="core" />
+          <text x="34" y="45" text-anchor="middle" class="charge-plus">+</text>
+          <text x="88" y="45" text-anchor="middle" class="charge-plus">+</text>
+          <text x="142" y="45" text-anchor="middle" class="charge-plus">+</text>
+          <text x="34" y="103" text-anchor="middle" class="charge-plus">+</text>
+          <text x="88" y="103" text-anchor="middle" class="charge-plus">+</text>
+          <text x="142" y="103" text-anchor="middle" class="charge-plus">+</text>
+
+          <circle cx="36" cy="170" r="16" class="electron" />
+          <circle cx="84" cy="188" r="16" class="electron" />
+          <circle cx="134" cy="164" r="16" class="electron" />
+          <circle cx="170" cy="210" r="16" class="electron" />
+          <text x="36" y="176" text-anchor="middle" class="charge-minus">-</text>
+          <text x="84" y="194" text-anchor="middle" class="charge-minus">-</text>
+          <text x="134" y="170" text-anchor="middle" class="charge-minus">-</text>
+          <text x="170" y="216" text-anchor="middle" class="charge-minus">-</text>
+        </g>
+        <text x="130" y="346" text-anchor="middle" class="equation positive">
+          net charge = +2e
+        </text>
+      </g>
+
+      <g transform="translate(592 0)" class="panel" filter="url(#ledger-shadow)">
+        <rect width="260" height="380" rx="16" />
+        <text x="130" y="36" text-anchor="middle" class="panel-title">
+          electrons added
+        </text>
+        <text x="130" y="62" text-anchor="middle" class="panel-subtitle">
+          6 positive cores, 8 electrons
+        </text>
+        <g transform="translate(42 92)">
+          <circle cx="34" cy="38" r="24" class="core" />
+          <circle cx="88" cy="38" r="24" class="core" />
+          <circle cx="142" cy="38" r="24" class="core" />
+          <circle cx="34" cy="96" r="24" class="core" />
+          <circle cx="88" cy="96" r="24" class="core" />
+          <circle cx="142" cy="96" r="24" class="core" />
+          <text x="34" y="45" text-anchor="middle" class="charge-plus">+</text>
+          <text x="88" y="45" text-anchor="middle" class="charge-plus">+</text>
+          <text x="142" y="45" text-anchor="middle" class="charge-plus">+</text>
+          <text x="34" y="103" text-anchor="middle" class="charge-plus">+</text>
+          <text x="88" y="103" text-anchor="middle" class="charge-plus">+</text>
+          <text x="142" y="103" text-anchor="middle" class="charge-plus">+</text>
+
+          <circle cx="8" cy="150" r="16" class="electron" />
+          <circle cx="42" cy="188" r="16" class="electron" />
+          <circle cx="82" cy="154" r="16" class="electron" />
+          <circle cx="120" cy="190" r="16" class="electron" />
+          <circle cx="164" cy="158" r="16" class="electron" />
+          <circle cx="196" cy="198" r="16" class="electron" />
+          <circle cx="70" cy="224" r="16" class="electron" />
+          <circle cx="148" cy="230" r="16" class="electron" />
+          <text x="8" y="156" text-anchor="middle" class="charge-minus">-</text>
+          <text x="42" y="194" text-anchor="middle" class="charge-minus">-</text>
+          <text x="82" y="160" text-anchor="middle" class="charge-minus">-</text>
+          <text x="120" y="196" text-anchor="middle" class="charge-minus">-</text>
+          <text x="164" y="164" text-anchor="middle" class="charge-minus">-</text>
+          <text x="196" y="204" text-anchor="middle" class="charge-minus">-</text>
+          <text x="70" y="230" text-anchor="middle" class="charge-minus">-</text>
+          <text x="148" y="236" text-anchor="middle" class="charge-minus">-</text>
+        </g>
+        <text x="130" y="346" text-anchor="middle" class="equation negative">
+          net charge = -2e
+        </text>
+      </g>
+    </g>
+
+    <text x="460" y="456" text-anchor="middle" class="caption">
+      The object is neutral only when the signed counts cancel. Nothing has to
+      be empty of charge.
+    </text>
+  </svg>
+</figure>
+
+<style>
+  .charge-ledger {
+    margin: 1.5rem 0;
+    overflow-x: auto;
+  }
+
+  .charge-ledger svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .diagram-bg {
+    fill: color-mix(in srgb, var(--sl-color-gray-7) 84%, #dff7ff);
+    stroke: var(--sl-color-gray-5);
+  }
+
+  .panel rect {
+    fill: var(--sl-color-bg);
+    stroke: var(--sl-color-gray-5);
+  }
+
+  .panel-title,
+  .equation {
+    fill: var(--sl-color-white);
+    font: 700 20px system-ui, sans-serif;
+  }
+
+  .panel-subtitle,
+  .caption {
+    fill: var(--sl-color-gray-2);
+    font: 500 15px system-ui, sans-serif;
+  }
+
+  .core {
+    fill: #ffe08a;
+    stroke: #8a5a00;
+    stroke-width: 2;
+  }
+
+  .electron {
+    fill: #8bd3ff;
+    stroke: #075985;
+    stroke-width: 2;
+  }
+
+  .charge-plus,
+  .charge-minus {
+    font: 800 27px system-ui, sans-serif;
+  }
+
+  .charge-plus {
+    fill: #6b3d00;
+  }
+
+  .charge-minus {
+    fill: #063b5f;
+  }
+
+  .positive {
+    fill: #ffb86b;
+  }
+
+  .negative {
+    fill: #8bd3ff;
+  }
+
+  @media (max-width: 640px) {
+    .charge-ledger svg {
+      min-width: 680px;
+    }
+
+    .panel-title,
+    .equation {
+      font-size: 18px;
+    }
+
+    .panel-subtitle,
+    .caption {
+      font-size: 14px;
+    }
+  }
+</style>
